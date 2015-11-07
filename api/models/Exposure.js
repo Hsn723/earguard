@@ -20,7 +20,12 @@ module.exports = {
     user: {
       model: 'User',
       required: true
-    }
+    }/*,
+    beforeCreate: function(req, cb){
+      User.find({email: req.query.user}).exec(function(err, user) {
+
+      });
+    }*/
 
   }
 };

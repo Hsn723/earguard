@@ -26,7 +26,7 @@ module.exports.policies = {
   *                                                                          *
   ***************************************************************************/
 
-   '*': true,
+   '*': true
 
   /***************************************************************************
   *                                                                          *
@@ -34,16 +34,24 @@ module.exports.policies = {
   * and its actions                                                          *
   *                                                                          *
   ***************************************************************************/
-
+  /*AuthController:{
+    '*': true
+  },
   UserController: {
-    '*': 'sessionAuth'
+    '*': ['passport', 'sessionAuth']
   },
   DoseController: {
-    '*': 'sessionAuth'
+    '*': ['passport', 'sessionAuth']
   },
   ExposureController: {
-    '*': 'sessionAuth'
-  }
+    '*': ['passport', 'sessionAuth']
+  }*/
+
+  /*'*': ['passport', 'sessionAuth'],
+
+  'auth': {
+    '*': ['passport']
+  }*/
 
   // RabbitController: {
 
