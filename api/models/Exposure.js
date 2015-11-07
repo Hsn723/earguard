@@ -8,10 +8,11 @@
 module.exports = {
 
   attributes: {
-    time: {
+    // using createdAt instead
+    /*time: {
       type: 'datetime',
       required: true
-    },
+    },*/
     level: {
       type: 'float',
       required: true
