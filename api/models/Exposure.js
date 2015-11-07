@@ -8,6 +8,18 @@
 module.exports = {
 
   attributes: {
+    time: {
+      type: 'datetime',
+      required: true
+    },
+    level: {
+      type: 'float',
+      required: true
+    },
+    user: {
+      model: 'User',
+      required: true
+    }
 
   }
 };

@@ -8,6 +8,19 @@
 module.exports = {
 
   attributes: {
+    date: {
+      type: 'datetime',
+      required: true
+    },
+    dose: {
+      type: 'float',
+      required: true,
+      defaultsTo: 0
+    },
+    user: {
+      model: 'User',
+      required: true
+    }
 
   }
 };
